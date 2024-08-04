@@ -69,7 +69,9 @@ nav a.active {
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: rgba(0, 0, 0, 0.353);
     display: none;
   }
 
