@@ -8,7 +8,7 @@ const AppRoute = () => {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/gate_notes/" element={<Home />} />
         </Routes>
       </Layout>
     </Router>
