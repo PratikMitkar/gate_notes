@@ -1,0 +1,22 @@
+.header {
+    background: url('src/assets/bg_img.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 200px 20px;
+    height: 200px;
+
+  }
+  
+  .header-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .sign-up-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
