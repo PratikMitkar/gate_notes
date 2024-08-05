@@ -13,6 +13,7 @@ const BookDetail = () => {
 
   const bookCover = `/gate_notes/books/${bookName}/cover.png`;
 
+  
   return (
     <div className={styles.bookDetailContainer}>
       <img src={bookCover} alt={`${bookName} Cover`} className={styles.bookCover} />
