@@ -1,0 +1,45 @@
+.bookDetailContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bookCover {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .unitList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .unit {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .unit h3 {
+    margin: 0;
+  }
+  
+  .unit a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .unit a:hover {
+    color: #0056b3;
+  }
+  
