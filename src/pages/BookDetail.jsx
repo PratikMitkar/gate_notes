@@ -1,32 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import PdfReader from '../components/PdfViewer';
 import styles from './BookDetail.module.css';
-import booksData from '../assets/books.json'; // Adjust the path as necessary
+import booksData from '../assets/books.json';
 
 const BookDetail = () => {
   const { bookName } = useParams();
   const book = booksData.books.find(book => book.name === bookName);
+  const [selectedUnit, setSelectedUnit] = useState(null);
 
   if (!book) {
     return <div>Book not found</div>;
   }
 
-  const bookCover = `/gate_notes/books/${bookName}/cover.png`;
-
-  
   return (
     <div className={styles.bookDetailContainer}>
-      <img src={bookCover} alt={`${bookName} Cover`} className={styles.bookCover} />
-      <h2>{bookName}</h2>
-      <div className={styles.unitList}>
-        {book.units.map((unit, index) => (
-          <div key={index} className={styles.unit}>
-            <h3>{unit}</h3>
-            <a href={`/gate_notes/books/${bookName}/${unit}.pdf`} target="_blank" rel="noopener noreferrer">
-              Open PDF
-            </a>
-          </div>
-        ))}
+      <div className={styles.unitListContainer}>
+        <img src={`/gate_notes/books/${bookName}/cover.png`} alt={`${bookName} Cover`} className={styles.bookCover} />
+        <h2 className={styles.bookTitle}>{bookName}</h2>
+        <div className={styles.unitList}>
+          {book.units.map((unit, index) => (
+            <div
+              key={index}
+              className={`${styles.unit} ${selectedUnit === unit ? styles.activeUnit : ''}`}
+              onClick={() => setSelectedUnit(unit)}
+            >
+              <h3>{unit}</h3>
+              <button onClick={() => setSelectedUnit(unit)} className={styles.openPdfBtn}>
+                Open PDF
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className={styles.pdfReaderContainer}>
+        {selectedUnit ? (
+          <PdfReader file={`/gate_notes/books/${bookName}/${selectedUnit}.pdf`} />
+        ) : (
+          <div className={styles.placeholder}>Select a unit to view the PDF</div>
+        )}
       </div>
     </div>
   );
