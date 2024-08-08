@@ -1,86 +1,32 @@
-.bookDetailContainer {
-  display: flex;
-  gap: 20px;
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Common styles for PdfReader */
+.pdfViewerContainer {
+  position: relative;
 }
 
-.unitListContainer {
-  flex: 1;
-  max-width: 300px;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.pdfReaderContainer {
-  flex: 2;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 750px; /* Adjust this based on your needs */
-}
-
-.bookCover {
+.pdfViewerContainer .pdfViewer {
   width: 100%;
-  margin-bottom: 20px;
-  border-radius: 8px;
+  height: 100%;
 }
 
-.bookTitle {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
+/* Styles for PC */
+@media (min-width: 768px) {
+  .pdfViewerContainer .pdfViewer {
+    /* Style adjustments for PC if needed */
+  }
+
+  .pdfViewerContainer .pdfViewer .toolbar {
+    display: flex;
+    /* Show toolbar elements including thumbnail, bookmark, attachment */
+  }
 }
 
-.unitList {
-  margin-top: 20px;
-}
+/* Styles for Android and smaller screens */
+@media (max-width: 767px) {
+  .pdfViewerContainer .pdfViewer {
+    /* Adjustments for mobile view */
+  }
 
-.unit {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.unit:hover {
-  background-color: #f0f0f0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.activeUnit {
-  background-color: #e0e0e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.openPdfBtn {
-  background-color: #007bff;
-  color: #ffffff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 10px;
-}
-
-.openPdfBtn:hover {
-  background-color: #0056b3;
-}
-
-.placeholder {
-  color: #888;
-  font-size: 18px;
-  text-align: center;
+  .pdfViewerContainer .pdfViewer .toolbar {
+    display: none; /* Hide the toolbar including thumbnail, bookmark, attachment */
+  }
 }
