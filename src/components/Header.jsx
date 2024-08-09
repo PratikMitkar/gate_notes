@@ -14,10 +14,11 @@ const Header = () => {
       <div className="nav-container">
         <h1 className="logo">Logo</h1>
         <nav className={`nav-links ${navOpen ? 'open' : ''}`}>
-          <a href="#" className="active">Home</a>
-          <a href="#">About</a>
+          <a href="#" className="active">
+            Home</a>
           <a href="#">Services</a>
           <a href="#">Contact</a>
+          <a href="Team/">Team</a>
         </nav>
         <div className="nav-toggle" onClick={handleNavToggle}>
           &#x22EE; {/* 3 vertical dots */}

@@ -33,25 +33,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
   font-family: 'Roboto Mono', monospace;
 }
 
 .name {
-  font-size: 2.5rem;
+  font-size: 2.2rem;  /* Reduced from 2.5rem */
   font-weight: bold;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;  /* Reduced from 1.5rem */
   font-weight: 500;
   color: #666;
+  margin-top: 5px;
 }
 
 .socials {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -72,33 +73,6 @@
   text-align: center;
 }
 
-.downloadBtn {
-  text-decoration: none;
-}
-
-.button {
-  background-color: #6200ea;
-  color: #fff;
-  border: none;
-  border-radius: 25px;
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
-  cursor: pointer;
-}
-
-.button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-}
-
-.button:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
 @media (min-width: 800px) {
   .container {
     flex-direction: row-reverse;
@@ -112,11 +86,13 @@
   }
 
   .name {
-    font-size: 3rem;
+    font-size: 2.5rem;  /* Reduced from 3rem */
+    margin-bottom: 15px;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.7rem;  /* Reduced from 2rem */
+    margin-top: 10px;
   }
 }
 

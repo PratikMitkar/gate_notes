@@ -6,6 +6,10 @@ const App = () => {
   return (
     <div className="app">
       <AppRoute/>
+      <div >
+        <p>© 2024 Pratik Mitkar :
+        All rights reserved.</p>
+      </div>
     </div>
   );
 };
