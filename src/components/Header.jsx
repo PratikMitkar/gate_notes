@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import bgImage from '../assets/bg_img.jpg'; // Adjust the path as necessary
+import bgImage from '../assets/bg_img.png'; // Adjust the path as necessary
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
