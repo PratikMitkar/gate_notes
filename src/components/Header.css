@@ -4,12 +4,24 @@
   background-attachment: fixed;
   color: white;
   padding: 20px;
-  height: 100vh; /* Changed to 100vh */
+  height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Changed from space-between to center */
-  position: relative; /* Added to position the nav */
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.59) 2%, transparent 100%);
+  z-index: 1;
 }
 
 .nav-container {
@@ -17,10 +29,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute; /* Added to position nav */
-  top: 0; /* Positioned at the top */
-  padding: 20px; /* Added padding */
-  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;
 }
 
 .logo {
@@ -38,9 +51,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a.active {
-  text-decoration: underline;
-}
+
 
 .nav-toggle {
   display: none;
@@ -49,10 +60,25 @@ nav a.active {
   color: white;
 }
 
-.header-content {
-  max-width: 600px;
-  text-align: center;
+.header-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 2;
 }
+
+.header-content {
+  flex: 1;
+  max-width: 45%;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+
+
+
 
 .sign-up-btn {
   background-color: #ff6600;
@@ -63,6 +89,21 @@ nav a.active {
 }
 
 @media (max-width: 768px) {
+  .header-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-content {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header-content.first {
+    height: auto; /* Reset height for mobile view */
+    align-items: center; /* Center content horizontally on mobile */
+  }
+
   nav {
     position: absolute;
     top: 100%;
@@ -80,7 +121,7 @@ nav a.active {
   }
 
   nav a {
-    margin: 10px 0; /* Increased margin for spacing */
+    margin: 10px 0;
   }
 
   .nav-toggle {

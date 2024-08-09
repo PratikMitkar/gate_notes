@@ -23,10 +23,18 @@ const Header = () => {
           &#x22EE; {/* 3 vertical dots */}
         </div>
       </div>
-      <div className="header-content">
-        <h1>Be a GATE Qualified Student</h1>
-        <p>Beginners to Qualifier Courses by Sir</p>
-        <button className="sign-up-btn">Sign-up today</button>
+      <div className="header-content-wrapper">
+        <div className="header-content first">
+        </div>
+        <div className="header-content">
+          <h1>Mr. Ankesh Khare</h1>
+          <p> :- M.Tech in Artificial Intelligence (CSE) from Defence Institute of Advanced Technology, Pune (2023, NIRF Ranking: 57th). <br/><br/>
+ :- IEEE and ACM student memberships. <br/><br/>
+ :- Published papers on AI and malnourishment detection at ICCST 2023 and 7th International Conference 2023 in Denmark. <br/><br/>
+ :- Winner of Underwater Robotics project event at IIT Kharagpur. <br /><br/>
+ :- M.Tech project: "Garbh – AI-based device for detecting infant malnourishment."</p>
+          
+        </div>
       </div>
     </header>
   );
