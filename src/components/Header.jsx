@@ -18,7 +18,7 @@ const Header = () => {
             Home</a>
           <a href="#">Services</a>
           <a href="#">Contact</a>
-          <a href="Team/">Team</a>
+          <a href="team">Team</a>
         </nav>
         <div className="nav-toggle" onClick={handleNavToggle}>
           &#x22EE; {/* 3 vertical dots */}
