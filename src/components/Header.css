@@ -1,3 +1,12 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .header {
   background-position: center center;
   background-size: cover;
@@ -24,6 +33,7 @@
   z-index: 1;
 }
 
+/* Desktop Navigation */
 .nav-container {
   width: 100%;
   display: flex;
@@ -38,28 +48,76 @@
 
 .logo {
   margin: 0;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+  z-index: 10; /* Ensure nav is on top */
+  position: relative; /* Position relative for stacking context */
 }
 
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-size: 16px;
 }
 
+nav a.active {
+  border-bottom: 2px solid #ff6600;
+}
 
-
-.nav-toggle {
-  display: none;
-  cursor: pointer;
+/* Mobile Sidebar Navigation */
+.sidebar-toggle {
   font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 20; /* Ensure toggle is on top */
   color: white;
+  background-color: #333;
+  border-radius: 5px;
+  display: none; /* Hide toggle by default */
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: left 0.3s ease;
+  z-index: 15; /* Ensure it appears above other elements */
+}
+
+.sidebar.open {
+  left: 0; /* Slide in from the left */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+/* Header Content */
 .header-content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -76,9 +134,15 @@ nav a {
   padding: 20px;
 }
 
+.header-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-
-
+.header-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
 
 .sign-up-btn {
   background-color: #ff6600;
@@ -86,8 +150,15 @@ nav a {
   padding: 10px 20px;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
+.sign-up-btn:hover {
+  background-color: #e55b00;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
   .header-content-wrapper {
     flex-direction: column;
@@ -97,6 +168,7 @@ nav a {
   .header-content {
     max-width: 100%;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .header-content.first {
@@ -104,27 +176,13 @@ nav a {
     align-items: center; /* Center content horizontally on mobile */
   }
 
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    margin-left: 2%;
-    margin-right: 2%;
-    background-color: rgba(0, 0, 0, 0.353);
+  /* Hide desktop nav on mobile */
+  .nav-container {
     display: none;
   }
 
-  nav.open {
-    display: flex;
-  }
-
-  nav a {
-    margin: 10px 0;
-  }
-
-  .nav-toggle {
+  /* Show sidebar toggle and sidebar on mobile */
+  .sidebar-toggle {
     display: block;
   }
 }
