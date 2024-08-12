@@ -7,10 +7,10 @@ import books from '../assets/books.jpg';
 import { Link } from 'react-router-dom';
 
 const courses = [
-  { title: 'notes', duration: '3 weeks', imgSrc: notes, procidto: '/gate_notes/books' },
-  { title: 'video lectures', duration: '4 weeks', imgSrc: video_lectures, procidto: '/gate_notes/books' },
-  { title: 'live lectures', duration: '4 weeks', imgSrc: vidlec, procidto: '/gate_notes/books' },
-  { title: 'books', duration: '4 weeks', imgSrc: books, procidto: '/gate_notes/books' },
+  { title: 'Notes', imgSrc: notes, procidto: '/gate_notes/books' },
+  { title: 'Video Lectures', imgSrc: video_lectures, procidto: '/gate_notes/books' },
+  { title: 'Live Lectures', imgSrc: vidlec, procidto: '/gate_notes/books' },
+  { title: 'Books', imgSrc: books, procidto: '/gate_notes/books' },
 ];
 
 const PopularCourses = () => {
@@ -22,7 +22,6 @@ const PopularCourses = () => {
           <Link to={course.procidto} key={index} className="course-card">
             <img src={course.imgSrc} alt={course.title} />
             <h3>{course.title}</h3>
-            <p>{course.duration}</p>
           </Link>
         ))}
       </div>

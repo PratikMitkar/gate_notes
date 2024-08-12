@@ -1,0 +1,78 @@
+.magazine-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px;
+    border-radius: 8px;
+    width: 60%;
+    margin: 50px auto; /* Center the container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .magazine-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  
+  .image-container {
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .magazine-container:hover .image-container {
+    transform: scale(1.1); /* Slight zoom-in effect on hover */
+  }
+  
+  .magazine-cover {
+    width: 80%; /* Adjust the size of the magazine cover */
+    border: 10px solid white; /* White border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: transform 0.3s ease;
+  }
+  
+  .magazine-container:hover .magazine-cover {
+    transform: rotate(-5deg); /* Rotate the image slightly on hover */
+  }
+  
+  .details-container {
+    flex: 1;
+    padding-left: 20px;
+    color: #8e8e8e; /* Light gray color for the text */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .magazine-container:hover .details-container {
+    transform: translateX(10px); /* Move text slightly to the right on hover */
+    color: #333; /* Darken the text color on hover */
+  }
+  
+  .details-container h2 {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .details-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  
+  .read-more-button {
+    background-color: transparent;
+    color: #8e8e8e;
+    border: 1px solid #8e8e8e;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: #8e8e8e;
+    color: white;
+    transform: translateY(-3px); /* Move the button up slightly on hover */
+  }
+  

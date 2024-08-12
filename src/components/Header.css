@@ -1,4 +1,3 @@
-/* General Styles */
 body, html {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ body, html {
   background-attachment: fixed;
   color: white;
   padding: 20px;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,7 +32,7 @@ body, html {
   z-index: 1;
 }
 
-/* Desktop Navigation */
+
 .nav-container {
   width: 100%;
   display: flex;
@@ -70,7 +69,6 @@ nav a.active {
   border-bottom: 2px solid #ff6600;
 }
 
-/* Mobile Sidebar Navigation */
 .sidebar-toggle {
   font-size: 24px;
   cursor: pointer;
@@ -158,7 +156,6 @@ nav a.active {
   background-color: #e55b00;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .header-content-wrapper {
     flex-direction: column;
@@ -168,20 +165,18 @@ nav a.active {
   .header-content {
     max-width: 100%;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .header-content.first {
-    height: auto; /* Reset height for mobile view */
-    align-items: center; /* Center content horizontally on mobile */
+    height: auto; 
+    align-items: center; 
   }
 
-  /* Hide desktop nav on mobile */
   .nav-container {
     display: none;
   }
 
-  /* Show sidebar toggle and sidebar on mobile */
   .sidebar-toggle {
     display: block;
   }
