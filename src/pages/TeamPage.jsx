@@ -1,12 +1,14 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import pratik from '../assets/pratik_img.png'
+import pratik from '../assets/bgi.jpg'
 import AllTeam from '../components/AllTeam';
+import Header from '../components/headTital';
+
 
 const TeamPage = () => {
   return (
     <div>
-      <Hero 
+     {/* <Hero 
         heroImg= {pratik} 
         username="Pratik Mitakr" 
         development="Full stack devloper, app devloper" 
@@ -15,7 +17,12 @@ const TeamPage = () => {
         Linkedin="" 
         description="laksjgjnds" 
 
-      />
+      />*/}
+            <Header
+              backgroundImage={pratik} 
+              title= 'Team' 
+              /> 
+
       <AllTeam/>
     </div>
   );

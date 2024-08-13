@@ -1,0 +1,41 @@
+.header1 {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    height: 20dvh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .header1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    height: 24dvh; 
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.59) 2%, transparent 100%);
+    z-index: 1;
+  }
+
+  .header1-content {
+    flex: 1;
+    max-width: 45%;
+    color: #000000;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+  }
+
+
+  

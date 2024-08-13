@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './BooksPage.module.css';
-import booksData from '../assets/books.json'; // Adjust the path as necessary
+import booksData from '../assets/books.json'; 
+import bg from '../assets/bg_img.png'
+import Header from '../components/headTital';
 
 const BooksPage = () => {
   return (
-    <div className={styles.homeContainer}>
-      <h2>Books</h2>
+    <div>
+            <Header
+              backgroundImage={bg} 
+              title= 'books' 
+              />
+      <div className={styles.homeContainer}>
+
       <div className={styles.bookList}>
         {booksData.books.map((book, index) => (
           <Link to={`/gate_notes/book/${book.name}`} key={index} className={styles.book}>
@@ -19,6 +26,7 @@ const BooksPage = () => {
           </Link>
         ))}
       </div>
+    </div>
     </div>
   );
 };
