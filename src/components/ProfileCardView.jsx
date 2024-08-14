@@ -18,7 +18,7 @@ const ProfileCardView = ({
       <img src={imageSrc} alt="Profile" className="profile-image" />
       <h2 className="profile-name">{name}</h2>
       <p className="profile-title">{title}</p>
-      <div className="socials">
+      {/*<div className="socials">
         <a href={twitterLink} target="_blank" rel="noopener noreferrer">
           <img src={twitterIcon} alt="Twitter icon" />
         </a>
@@ -29,7 +29,7 @@ const ProfileCardView = ({
           <img src={linkedinIcon} alt="LinkedIn icon" />
         </a>
       </div>
-      <p className="profile-subtitle">{subtitle}</p>
+      <p className="profile-subtitle">{subtitle}</p>*/}
 
     </div>
   );

@@ -17,67 +17,37 @@ const AllTeam = () => {
         imageSrc={pratikImg}
         name="Pratik Mitkar"
         title="Full Stack Developer, App Developer"
-        twitterLink="https://twitter.com/yourprofile"
-        githubLink="https://github.com/yourprofile"
-        linkedinLink="https://linkedin.com/in/yourprofile"
-        twitterIcon={twitterLight}
-        githubIcon={githubLight}
-        linkedinIcon={linkedinLight}
+
       />
       <ProfileCardView
         imageSrc={g1}
         name=" Joha Kadri"
         title="Intern"
-        twitterLink="https://twitter.com/yourprofile"
-        githubLink="https://github.com/yourprofile"
-        linkedinLink="https://linkedin.com/in/yourprofile"
-        twitterIcon={twitterLight}
-        githubIcon={githubLight}
-        linkedinIcon={linkedinLight}
+
       />
       <ProfileCardView
         imageSrc={g1}
         name=" Sakshi Kad"
         title="Intern"
-        twitterLink="https://twitter.com/yourprofile"
-        githubLink="https://github.com/yourprofile"
-        linkedinLink="https://linkedin.com/in/yourprofile"
-        twitterIcon={twitterLight}
-        githubIcon={githubLight}
-        linkedinIcon={linkedinLight}
+
       />
       <ProfileCardView
         imageSrc={g1}
         name="Devashree Gathade"
         title="Intern"
-        twitterLink="https://twitter.com/yourprofile"
-        githubLink="https://github.com/yourprofile"
-        linkedinLink="https://linkedin.com/in/yourprofile"
-        twitterIcon={twitterLight}
-        githubIcon={githubLight}
-        linkedinIcon={linkedinLight}
+
       />
       <ProfileCardView
         imageSrc={g2}
         name=" Vaishnavi Bhamare"
         title="Intern"
-        twitterLink="https://twitter.com/yourprofile"
-        githubLink="https://github.com/yourprofile"
-        linkedinLink="https://linkedin.com/in/yourprofile"
-        twitterIcon={twitterLight}
-        githubIcon={githubLight}
-        linkedinIcon={linkedinLight}
+
       />
             <ProfileCardView
         imageSrc={g2}
         name="Aditi Karanje"
         title="Intern"
-        twitterLink="https://twitter.com/yourprofile"
-        githubLink="https://github.com/yourprofile"
-        linkedinLink="https://linkedin.com/in/yourprofile"
-        twitterIcon={twitterLight}
-        githubIcon={githubLight}
-        linkedinIcon={linkedinLight}
+
       />
     </div>
   );
