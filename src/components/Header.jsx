@@ -14,7 +14,6 @@ const Header = () => {
     <header className="header" style={{ backgroundImage: `url(${bgImage})` }}>
       {/* Desktop Navigation */}
       <div className="nav-container desktop-only">
-        <h1 className="logo">Logo</h1>
         <nav>
           <Link to="/gate_notes/" className="active">Home</Link>
           <Link to="/gate_notes/team">Team</Link>
@@ -40,11 +39,12 @@ const Header = () => {
           <h1>Mr. Ankesh Khare</h1>
           <p>
             :- M.Tech in Artificial Intelligence (CSE) from Defence Institute of Advanced Technology, Pune (2023, NIRF Ranking: 57th). <br/><br/>
-            :- IEEE and ACM student memberships. <br/><br/>
-            :- Published papers on AI and malnourishment detection at ICCST 2023 and 7th International Conference 2023 in Denmark. <br/><br/>
-            :- Winner of Underwater Robotics project event at IIT Kharagpur. <br /><br/>
-            :- M.Tech project: "Garbh – AI-based device for detecting infant malnourishment."
-          </p>
+            :- Member of IEEE and ACM Student Society. <br/><br/>
+            :- Published Research Papers on AI and Malnourishment detection at ICCST 2023 International Conferences - IEEE explored Digital library and 7th International Conference 2023 in Denmark, Europe. <br/><br/>
+            :- Winner of Underwater Robotics National Level Project Competition at IIT Kharagpur. <br /><br/>
+            :- M.Tech project: "GARBH – AI-based device for detecting infant malnourishment."<br /><br/>
+            :- GATE Qualified (Computer Science and Engineering)
+            </p>
         </div>
       </div>
     </header>

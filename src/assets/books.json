@@ -1,21 +1,30 @@
 {
     "books": [
       {
-        "name": "hew",
+        "name": "C language",
         "units": ["Unit1", "Unit2"]
       },
       {
-        "name": "hello",
+        "name": "Data Structure",
         "units": ["Unit1", "Unit2", "Unit3", "Unit4", "Unit5"]
       },
       {
-        "name": "book3",
-        "units": ["Unit1", "Unit2", "Unit3", "Unit4"]
+        "name": "Algorithm",
+        "units": ["Algorithm 1", "Algorithm 2", "Algorithm 3"]
       },
 
       {
-        "name": "book4",
-        "units": ["Unit1", "Unit2", "Unit3"]
+        "name": "Machine Learning",
+        "units": ["Machine Learning 1"]
+      },
+      {
+        "name": "DBMS",
+        "units": ["DBMS 1", "DBMS 2", "DBMS 3", "DBMS 4"]
+
+      },
+      {
+        "name": "SQL",
+        "units": ["SQL - 1", "SQL - 2"]
       }
     ]
   }

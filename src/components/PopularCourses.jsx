@@ -7,7 +7,7 @@ import books from '../assets/books.jpg';
 import { Link } from 'react-router-dom';
 
 const courses = [
-  { title: 'handreturn Notes', imgSrc: notes, procidto: '/gate_notes/books' },
+  { title: 'Hand-Written Notes', imgSrc: notes, procidto: '/gate_notes/books' },
   { title: 'Video Lectures', imgSrc: video_lectures, procidto: '/gate_notes/books' },
   { title: 'Live Lectures', imgSrc: vidlec, procidto: '/gate_notes/books' },
   { title: 'Books', imgSrc: books, procidto: '/gate_notes/books' },
