@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './BooksPage.module.css';
 import booksData from '../assets/books.json'; 
-import bg from '../assets/bg_img.png'
+import bg from '../assets/bgimg.png'
 import Header from '../components/headTital';
 
 const BooksPage = () => {
@@ -10,7 +10,7 @@ const BooksPage = () => {
     <div>
             <Header
               backgroundImage={bg} 
-              title= 'books' 
+              title= 'Hand-Written Notes'
               />
       <div className={styles.homeContainer}>
 

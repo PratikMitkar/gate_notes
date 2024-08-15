@@ -1,7 +1,7 @@
 import React from 'react';
 import './headTital.css';
 
-const HeadTital = ({ backgroundImage, title }) => {
+const HeadTital = ({ backgroundImage, title , subtext}) => {
   return (
     <header 
       className="header1" 
@@ -9,6 +9,7 @@ const HeadTital = ({ backgroundImage, title }) => {
     >
       <div className="header1-content">
         <h1 className="header-title">{title}</h1>
+        <p>{subtext}</p>
       </div>
     </header>
   );

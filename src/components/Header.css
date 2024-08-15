@@ -1,3 +1,15 @@
+/* Logo Container for Right-Aligned Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Existing CSS */
 body, html {
   margin: 0;
   padding: 0;
@@ -32,7 +44,6 @@ body, html {
   z-index: 1;
 }
 
-
 .nav-container {
   width: 100%;
   display: flex;
@@ -45,17 +56,11 @@ body, html {
   z-index: 2;
 }
 
-.logo {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
-}
-
 nav {
   display: flex;
   flex-direction: row;
-  z-index: 10; /* Ensure nav is on top */
-  position: relative; /* Position relative for stacking context */
+  z-index: 10;
+  position: relative;
 }
 
 nav a {
@@ -76,17 +81,17 @@ nav a.active {
   position: fixed;
   top: 20px;
   left: 20px;
-  z-index: 20; /* Ensure toggle is on top */
+  z-index: 20;
   color: white;
   background-color: #333;
   border-radius: 5px;
-  display: none; /* Hide toggle by default */
+  display: none;
 }
 
 .sidebar {
   position: fixed;
   top: 0;
-  left: -250px; /* Initially hidden off-screen */
+  left: -250px;
   width: 250px;
   height: 100%;
   background-color: #111;
@@ -95,11 +100,11 @@ nav a.active {
   align-items: center;
   justify-content: center;
   transition: left 0.3s ease;
-  z-index: 15; /* Ensure it appears above other elements */
+  z-index: 15;
 }
 
 .sidebar.open {
-  left: 0; /* Slide in from the left */
+  left: 0;
 }
 
 .sidebar a {
@@ -115,7 +120,6 @@ nav a.active {
   background-color: #575757;
 }
 
-/* Header Content */
 .header-content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -140,6 +144,7 @@ nav a.active {
 .header-content p {
   font-size: 16px;
   line-height: 1.6;
+  text-align: left;
 }
 
 .sign-up-btn {

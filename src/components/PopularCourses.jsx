@@ -16,7 +16,8 @@ const courses = [
 const PopularCourses = () => {
   return (
     <div className="popular-courses">
-      <h2> -: Services :-</h2>
+      <h2> -: Education Portal :-</h2>
+      <h3> GATE / NET / Computer Scientist / IT Officer / All the Government Competitive Exams Related To The Computer Engeneering / IT Engeneering / CSE Students</h3>
       <div className="courses-grid">
         {courses.map((course, index) => (
           <Link to={course.procidto} key={index} className="course-card">

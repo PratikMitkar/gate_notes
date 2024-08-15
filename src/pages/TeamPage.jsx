@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import pratik from '../assets/bgi.jpg'
+import pratik from '../assets/bgimg.png'
 import AllTeam from '../components/AllTeam';
 import Header from '../components/headTital';
 
@@ -20,7 +20,8 @@ const TeamPage = () => {
       />*/}
             <Header
               backgroundImage={pratik} 
-              title= 'Team' 
+              title= 'Developement Team ' 
+              subtext='Education Portal '
               /> 
 
       <AllTeam/>
