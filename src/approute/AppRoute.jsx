@@ -9,7 +9,7 @@ import TeamPage from '../pages/TeamPage';
 
 const AppRoute = () => {
   return (
-    <Router basename="/gate_notes">
+    <Router>
       <Layout>
         <Routes>
           <Route path="/gate_notes/" element={<Home />} />
